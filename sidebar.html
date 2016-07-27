@@ -22,17 +22,38 @@
     }
     .ask-question {
       color: #FFF;
-      display: block;
       background: #0DA737;
       width: 150px;
       text-align: center;
-      padding: 5px;
+      padding: 3px;
       border: 2px solid #000;
-      box-shadow: 3px 3px 0px 1px rgba(0,0,0,0.75);
+      box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 8px;
     }
     .emailUs {
       color: #175797;
       text-decoration: underline;
+      vertical-align: top;
+      margin-top: 8px;
+      margin-left: 5px;
+    }
+    .question-icon {
+      background: url(&quot;ask-question.png&quot;);
+      background-repeat: no-repeat;
+      height: 45px;
+      width: 45px;
+      background-size: contain;
+      display: inline-block;
+    }
+    .email-icon {
+      background: url(&quot;ask-question.png&quot;);
+      background-repeat: no-repeat;
+      height: 45px;
+      width: 45px;
+      background-size: contain;
+      display: inline-block;
     }
   </style>
 </head>
@@ -52,9 +73,13 @@
   <h2>Contact Us</h2>
   <p>Still have question?</p> 
   <p>
+    <span class="question-icon"></span>
     <a href="http://www.swiffer.com/en-us/cleaning-tips/swiffer-faqs" class="ask-question">Ask a Question</a>
   </p>
-  <p><a class="emailUs" href="https://pgconsumersupport.secure.force.com/ContactUs?brand=Swiffer&country=United+States+of+America&language=English-US">Email Us</a></p>
+  <p>
+    <span class="email-icon"></span>
+    <a class="emailUs" href="https://pgconsumersupport.secure.force.com/ContactUs?brand=Swiffer&country=United+States+of+America&language=English-US">Email Us</a>
+  </p>
   <p>Call Us 1-800-214-8734<br>9:00AM - 6:00PM EST Monday - Friday</p>
 </div>
 </body>
