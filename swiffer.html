@@ -214,17 +214,19 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   </div>
 
   <div id="phdesktopheader_0_phdesktopheadertop_2_pnlCRMHeaderLink" class="span2 row-fluid pull-right contry-selector-sign-bg">
-	<script>if(window.GSFN.SFTK.user && window.GSFN.SFTK.user != undefined) {</script>
-      <div class=" sign-style newsletter">
-          <a href="#" class="event_profile_login" target="_top" onclick="window.GSFN.SFTK.login();">
-              Sign In
-          </a>
-          &nbsp;
-          <a href="/en-us/createprofilepage" class="event_profile_register">
-              Register
-          </a>
-      </div>
-	<script>}</script>
+	<script>
+		console.log(window.GSFN.SFTK.user);
+		if(!window.GSFN.SFTK.user || window.GSFN.SFTK.user == undefined) {
+			var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a>&nbsp;<a href="#" class="event_profile_register">Register</a></div>';	
+			document.write(loginHTML);
+		}
+		else {
+			var userHTML = 'Welcome '+window.GSFN.SFTK.user.first_name;
+			
+		}
+	</script>
+      
+	
   </div>
 
   <div id="logout-confirmation-modal" class="warning-modal modal hide row-fluid" role="dialog" aria-labelledby="myModalLabel">
