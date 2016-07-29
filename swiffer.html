@@ -221,8 +221,8 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 			document.write(loginHTML);
 		}
 		else {
-			var userHTML = 'Welcome '+window.GSFN.SFTK.user.first_name;
-			
+			var userHTML = 'Welcome '+window.GSFN.SFTK.user.display_name;
+			document.write(userHTML);
 		}
 	</script>
       
