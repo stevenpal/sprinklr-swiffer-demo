@@ -67,6 +67,9 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   background-image: url("http://cdn.messenger.pgsitecore.com/en-us/-/media/Swiffer/Images/backgrounds/Desktop/header-dt.png");
 }
 .sign-style.newsletter a {border-right:0px;}
+.userName {
+	border-right:1px solid;
+}
 </style></head>
 
 <body>
@@ -135,7 +138,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 			document.write(loginHTML);
 		}
 		else {
-			var userHTML = '<div class=" sign-style newsletter"><span class="welcomeMsgText">Welcome </span><a href="#" id="phdesktopheader_0_phdesktopheadertop_2_userFNameLink" title="Ami">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a>';
+			var userHTML = '<div class=" sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a href="#" id="phdesktopheader_0_phdesktopheadertop_2_userFNameLink" title="Ami" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a>';
 			document.write(userHTML);
 		}
 		$('.logoutbtn').click(function(){window.GSFN.SFTK.logout();});
