@@ -78,9 +78,10 @@ a.userName {
 	text-align:center;
 }
 .search-component {
-	width: 66%;	
+	width: 50%;	
 	margin: 0 auto;
 	display:inline-block;
+	height: 45px;
 }
 .input.highlighted, .input-group.highlighted {
     background-color: #B7D82E;
@@ -89,9 +90,22 @@ a.userName {
     position: relative;
 }
 #search_keywords {
+    height: 100%;
     padding-right: 1.4em;
     text-overflow: ellipsis;
     font-size: .95em;
+    border-color: #0DA737;
+    background-image: linear-gradient(#f3f3f3, white);
+    border-radius: 3px;
+    border: 1px solid #c9c9c9;
+    color: #222222;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    outline: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color;
+    background-color: #f3f3f3;
 }
 .input.highlighted .button, .input-group.highlighted .button {
     position: absolute;
