@@ -217,7 +217,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   <div id="phdesktopheader_0_phdesktopheadertop_2_pnlCRMHeaderLink" class="span2 row-fluid pull-right contry-selector-sign-bg">
 	<script>
 		if(!window.GSFN.SFTK.user || window.GSFN.SFTK.user == undefined) {
-			var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a>&nbsp;<a href="#" class="event_profile_register">Register</a></div>';	
+			var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a></div>';	
 			document.write(loginHTML);
 		}
 		else {
@@ -225,8 +225,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 			document.write(userHTML);
 		}
 		$('.logoutbtn').click(function(){window.GSFN.SFTK.logout();});
-		$('.event_profile_register').click(function(){window.GSFN.SFTK.login();});
-		$('.event_profile_register').click(function(){window.GSFN.SFTK.register();});
+		$('.event_profile_login').click(function(){window.GSFN.SFTK.login();});
 	</script>
       
 	
