@@ -215,7 +215,6 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 
   <div id="phdesktopheader_0_phdesktopheadertop_2_pnlCRMHeaderLink" class="span2 row-fluid pull-right contry-selector-sign-bg">
 	<script>
-		console.log(window.GSFN.SFTK.user);
 		if(!window.GSFN.SFTK.user || window.GSFN.SFTK.user == undefined) {
 			var loginHTML = '<div class=" sign-style newsletter"><a href="#" class="event_profile_login">Sign In</a>&nbsp;<a href="#" class="event_profile_register">Register</a></div>';	
 			document.write(loginHTML);
@@ -224,10 +223,9 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 			var userHTML = '<div class=" sign-style newsletter"><span class="welcomeMsgText">Welcome </span><a href="#" id="phdesktopheader_0_phdesktopheadertop_2_userFNameLink" title="Ami">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a>';
 			document.write(userHTML);
 		}
-		$('.logoutbtn').click(function(){
-			console.log("ininin");
-			window.GSFN.SFTK.logout();
-		});
+		$('.logoutbtn').click(function(){window.GSFN.SFTK.logout();});
+		$('.event_profile_register').click(function(){window.GSFN.SFTK.login();});
+		$('.event_profile_register').click(function(){window.GSFN.SFTK.register();});
 	</script>
       
 	
