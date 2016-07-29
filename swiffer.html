@@ -138,7 +138,7 @@ a.userName {
 			document.write(loginHTML);
 		}
 		else {
-			var userHTML = '<div class=" sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a data-action="displayProfileSummary" data-user-id="'+window.GSFN.SFTK.user.id+'" href="#" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a>';
+			var userHTML = '<div class=" sign-style newsletter"><span class="welcomeMsgText">Welcome </span>&nbsp;<a href="'+window.GSFN.SFTK.user.profile_url+'" target="_top" class="userName">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a>';
 			document.write(userHTML);
 		}
 		$('.logoutbtn').click(function(){window.GSFN.SFTK.logout();});
