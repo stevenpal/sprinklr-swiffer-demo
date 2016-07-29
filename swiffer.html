@@ -68,7 +68,6 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 </style></head>
 
 <body>
-	<script>console.log(window.GSFN.SFTK.user);</script>
 <div class="headerImage">
   <div class="header" >
               <div class="row-fluid brand-country-section">
@@ -215,7 +214,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
   </div>
 
   <div id="phdesktopheader_0_phdesktopheadertop_2_pnlCRMHeaderLink" class="span2 row-fluid pull-right contry-selector-sign-bg">
-
+	<script>if(window.GSFN.SFTK.user && window.GSFN.SFTK.user != undefined) {</script>
       <div class=" sign-style newsletter">
           <a href="#" class="event_profile_login" target="_top" onclick="window.GSFN.SFTK.login();">
               Sign In
@@ -225,7 +224,7 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
               Register
           </a>
       </div>
-
+	<script>}</script>
   </div>
 
   <div id="logout-confirmation-modal" class="warning-modal modal hide row-fluid" role="dialog" aria-labelledby="myModalLabel">
