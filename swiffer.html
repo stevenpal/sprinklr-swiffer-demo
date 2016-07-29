@@ -224,6 +224,10 @@ localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgcl
 			var userHTML = '<div class=" sign-style newsletter"><span class="welcomeMsgText">Welcome </span><a href="#" id="phdesktopheader_0_phdesktopheadertop_2_userFNameLink" title="Ami">'+window.GSFN.SFTK.user.display_name+'</a>&nbsp;<a id="phdesktopheader_0_phdesktopheadertop_2_LogOffLink" class="logoutbtn" title="Logout" href="#logout-confirmation-modal">Logout</a>';
 			document.write(userHTML);
 		}
+		$('.logoutbtn').click(function(){
+			console.log("ininin");
+			window.GSFN.SFTK.logout();
+		});
 	</script>
       
 	
